@@ -1,8 +1,7 @@
 'IIS 短文件名枚举漏洞修复，适用于Windows2003+IIS6环境。
-'具体步骤如下：
-'   第一步: 执行命令 fsutil behavior set disable8dot3 1
-'   第二步：重启系统
-'   第三步：把该脚本放在网站根目录下执行
+'具体步骤如下:
+'   一: 执行命令"fsutil behavior set disable8dot3 1", 随后重启系统;
+'   二: 把该脚本放在网站根目录下并执行, 等待提示"执行完毕", 随后确认漏洞是否修复成功.
 
 Function FixPath(sPath)      
     Set oFso = CreateObject("Scripting.FileSystemObject")    
