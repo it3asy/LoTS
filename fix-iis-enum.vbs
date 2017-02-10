@@ -32,7 +32,7 @@ End Function
 
 path = Createobject("Scripting.FileSystemObject").GetFolder(".").Path
 msg = VBcrlf
-msg = "此工具针对IIS短文件名枚举漏洞进行，工具有一定风险性，请在使用前做好备份!" 
+msg = "此工具针对IIS短文件名枚举漏洞进行修复，具有一定风险性，请在使用前做好备份!" 
 msg = msg & VBcrlf & VBcrlf & VBcrlf & VBcrlf
 msg = msg & "请确认网站路径: "
 webdir = InputBox(msg, "警告", path)
